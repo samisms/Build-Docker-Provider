@@ -3,13 +3,25 @@ Superproject for Docker-Provider Project
 
 The following information is provided in this README file:
 
-1. [Build Environment](#build-environment)
-2. [Cloning Repository](#cloning-repository)
-3. [Building Instructions](#building-instructions)
-4. [Running unit tests](#running-unit-tests)
-5. [Final Kit Testing Instructions](#final-kit-testing-instructions)
+1. [Introduction](#introduction)
+2. [Build Environment](#build-environment)
+3. [Cloning Repository](#cloning-repository)
+4. [Building Instructions](#building-instructions)
+5. [Running unit tests](#running-unit-tests)
+6. [Final Kit Testing Instructions](#final-kit-testing-instructions)
 
 -----
+
+### Introduction
+
+This project is a build superproject for the [Docker Provider for OMI][].
+
+This project exists solely to set up the build environment/dependencies
+properly to build the [Docker Provider for OMI][] properly. It also contains
+versioning information for use by the Jenkins build system.
+
+[Docker Provider for OMI]: https://github.com/Microsoft/Docker-Provider
+
 
 ### Build Environment
 
