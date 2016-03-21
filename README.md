@@ -31,10 +31,20 @@ system. No other systems have been tested for build purposes.
 - The project assumes that the `sudo` command is permitted without any
 passwords. Please configure the `/etc/sudoers` file appropriately.
 
-- Build dependencies are required. To install packages, please execute:
+- If the system will be used for Jenkins, then Java is required:
 
 ```
-sudo apt-get install uuid-dev
+sudo apt-get install openjdk-7-jre
+```
+
+- Build dependencies are required. To install packages for building
+[Docker-Cimprov](https://github.com/Microsoft/Docker-Provider),
+please execute:
+
+```
+sudo apt-get upgrade
+sudo apt-get update
+sudo apt-get install git g++ make pkg-config libssl-dev libpam0g-dev rpm librpm-dev uuid-dev
 ```
 
 ### Cloning Repository
