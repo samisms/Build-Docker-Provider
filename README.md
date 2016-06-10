@@ -91,21 +91,44 @@ make test
 
 ### Final Kit Testing Instructions
 
+To install the bundle run it with --install. For example (actual bundle name may be different):
+
+```
+sudo sh ../target/Linux_ULINUX_1.0_x64_64_Release/docker-cimprov-1.0.0-3.universal.x86_64.sh --install
+```
+
 After the shell bundle is installed, you can verify proper operations.
 
-To do this:
-
-1. Be sure that docker is installed and configured [see above]
-(#Running-unit-tests),
-2. Install the shell bundle by running it with --install.
-
-Once that is done, then issue following commands:
+You will need to have some docker containers and images created on the server. To enumerate your containers run:
 
 ```
-omicli ei root/cimv2 Container_ImageInventory
-omicli ei root/cimv2 Container_ContainerInventory
-omicli ei root/cimv2 Container_ContainerStatistics
-omicli ei root/cimv2 Container_DaemonEvent
+sudo docker ps -a
 ```
+
+You can compare this output with the containers found by the OMS provider by running:
+
+```
+/opt/omi/bin/omicli ei root/cimv2 Container_ContainerInventory
+```
+
+To enumerate your images run:
+
+```
+sudo docker images
+```
+
+Compare this output with the images found by the OMS provider by running:
+
+```
+/opt/omi/bin/omicli ei root/cimv2 Container_ImageInventory
+```
+
+If you have running containers you can view statistics and events with these commands:
+
+```
+/opt/omi/bin/omicli ei root/cimv2 Container_ContainerStatistics
+/opt/omi/bin/omicli ei root/cimv2 Container_DaemonEvent
+```
+
 
 [Docker Site]: https://docs.docker.com/linux/
