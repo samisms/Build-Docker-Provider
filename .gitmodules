@@ -9,4 +9,4 @@
 [submodule "omi"]
 	path = omi
 	url = git@github.com:Microsoft/omi.git
-	branch = master
+	branch = stable
