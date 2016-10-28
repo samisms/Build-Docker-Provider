@@ -9,6 +9,7 @@ The following information is provided in this README file:
 4. [Building Instructions](#building-instructions)
 5. [Running unit tests](#running-unit-tests)
 6. [Final Kit Testing Instructions](#final-kit-testing-instructions)
+7. [Code of Conduct](#code-of-conduct)
 
 -----
 
@@ -130,5 +131,13 @@ If you have running containers you can view statistics and events with these com
 /opt/omi/bin/omicli ei root/cimv2 Container_DaemonEvent
 ```
 
-
 [Docker Site]: https://docs.docker.com/linux/
+
+### Code of Conduct
+
+This project has adopted the [Microsoft Open Source Code of Conduct]
+(https://opensource.microsoft.com/codeofconduct/).  For more
+information see the [Code of Conduct FAQ]
+(https://opensource.microsoft.com/codeofconduct/faq/) or contact
+[opencode@microsoft.com](mailto:opencode@microsoft.com) with any
+additional questions or comments.
